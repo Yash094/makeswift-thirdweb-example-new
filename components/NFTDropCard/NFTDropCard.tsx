@@ -186,7 +186,7 @@ const NFTDropCard = forwardRef(function NFTDropCard(
         onError: (err: any) => {
           toast({
             title: `Error minting NFT${quantity > 1 ? 's' : ''}`,
-            description: err?.message || 'Something went wrong.',
+            description: err?.reason || 'Something went wrong.',
             status: 'error',
           })
         },
