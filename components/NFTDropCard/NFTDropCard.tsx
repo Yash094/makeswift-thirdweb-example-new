@@ -211,9 +211,7 @@ const NFTDropCard = forwardRef(function NFTDropCard(
 
         <Grid gap={5}>
           <Grid gap={3}>
-            <Text as="h2" fontSize="3xl" fontWeight="semibold">
-              {contractMetadata?.name}
-            </Text>
+            
             {showDescription && (
               <Text as="p" fontSize="md">
                 {contractMetadata?.description}
